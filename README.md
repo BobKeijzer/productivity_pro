@@ -5,7 +5,7 @@ A productivity plugin primarily designed for [Cowork](https://claude.com/product
 ## Installation
 
 ```
-claude plugins add knowledge-work-plugins/productivity
+claude plugins add BobKeijzer/productivity_pro
 ```
 
 ## What It Does
@@ -16,18 +16,13 @@ This plugin gives Claude a persistent understanding of your work:
 - **Workplace memory** — A two-tier memory system that teaches Claude your shorthand, people, projects, and terminology. Say "ask todd to do the PSR for oracle" and Claude knows exactly who, what, and which deal.
 - **Visual dashboard** — A local HTML file that gives you a board view of your tasks and a live view of what Claude knows about your workplace. Edit from the board or the file — they stay in sync.
 
-## Commands
-
-| Command | What it does |
-|---------|--------------|
-| `/start` | Initialize tasks + memory, open the dashboard |
-| `/update` | Triage stale items, check memory for gaps, sync from external tools. Reads across all chats in the project. Saves changelog to memory/updates/ |
-| `/update --comprehensive` | Deep scan email, calendar, chat, all sessions — flag missed todos and suggest new memories |
-
 ## Skills
 
 | Skill | Description |
 |-------|-------------|
+| `/start` | Initialize tasks + memory, open the dashboard |
+| `/update` | Triage stale items, check memory for gaps, sync from external tools. Reads across all chats in the project. Saves changelog to memory/updates/ |
+| `/update --comprehensive` | Deep scan email, calendar, chat, all sessions — flag missed todos and suggest new memories |
 | `memory-management` | Two-tier memory system — CLAUDE.md for working memory, memory/ directory for deep storage |
 | `task-management` | Markdown-based task tracking using a shared TASKS.md file |
 
