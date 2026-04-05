@@ -123,7 +123,7 @@ Tasks and session transcripts often contain richer context than memory. Extract 
 
 ### 7. Save Update Changelog
 
-Create `memory/updates/` if it doesn't exist. Write a changelog to `memory/updates/DD-MM-YYYY.md`.
+Create `memory/updates/` if it doesn't exist. Each update run writes to a file named with today's date: `memory/updates/DD-MM-YYYY.md`. If a file for today already exists (from an earlier update run the same day), append to it. Never write to a file from a previous date — each new day gets its own file. Over time, `memory/updates/` grows into a dated history of what changed and when.
 
 This changelog captures what actually changed during this update run. The reason this matters: without it, memory/ and CLAUDE.md get updated in place and you lose track of what changed when. The changelog gives you a timeline — you can look back and see "on April 3rd we learned X, updated Y, and added Z."
 
